@@ -16,6 +16,7 @@ namespace API
     {
         public static async Task Main(string[] args)
         {
+            
            var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.CreateScope();
             var services = scope.ServiceProvider;
@@ -31,7 +32,8 @@ namespace API
                 logger.LogError(ex, "An error occured during migration");
             }
 
-            await host.RunAsync();        }
+            await host.RunAsync(); 
+        }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
