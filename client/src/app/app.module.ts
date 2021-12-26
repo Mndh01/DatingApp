@@ -51,7 +51,7 @@ import { DateInputComponent } from './_forms/date-input/date-input.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-  ReactiveFormsModule,
+    ReactiveFormsModule,
     SharedModule,
   ],
   providers: [
